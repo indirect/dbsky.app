@@ -7,8 +7,8 @@
     />
     <title>Share Bluesky Links via iMessage</title>
     <link rel='icon' type='image/png' href='/images/favicon.png' />
-    <meta property='og:title' content='skeeet.xyz' />
-    <meta property='og:image' content='https://skeeet.xyz/screenshot.png' />
+    <meta property='og:title' content='dbsky.app' />
+    <meta property='og:image' content='https://dbsky.app/screenshot.png' />
     <meta property='og:description' content='Share rich Bluesky links via iMessage, Signal, and more.' />
     <meta name='description' content='Share rich Bluesky links via iMessage, Signal, and more.' />
     <style>
@@ -51,14 +51,14 @@
       <footer>
         <h4>Made by Justin Williams</h4>
         <p><a href='https://bsky.app/profile/jww.wtf'>Follow me on Bluesky (@jww.wtf)</a></p>
-        <p><a href='https://github.com/justin/skeeet.xyz'>Check out the really bad TypeScript I wrote for this thing.</a></p>
+        <p><a href='https://github.com/indirect/dbsky.app'>Check out the really bad TypeScript I wrote for this thing.</a></p>
       </footer>
     </div>
   </body>
 
   <script type='text/javascript'>
     function convertUrl() { const url = document.getElementById("urlInput").value; const convertedUrl =
-    `https://skeeet.xyz?url=${url}`; const convertedUrlElement = document.getElementById("convertedUrl");
+    `https://dbsky.app?url=${url}`; const convertedUrlElement = document.getElementById("convertedUrl");
     convertedUrlElement.textContent = convertedUrl; const copyButton = document.createElement("button");
     copyButton.textContent = "Copy New Skeet URL"; copyButton.onclick = function() {
     navigator.clipboard.writeText(convertedUrl); }; convertedUrlElement.appendChild(copyButton); }

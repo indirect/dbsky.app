@@ -25,5 +25,6 @@ COPY --from=builder /app /app
 WORKDIR /app
 ENV NODE_ENV production
 ENV PATH /usr/local/node/bin:$PATH
+RUN npm run build
 
 CMD [ "npm", "run", "start" ]

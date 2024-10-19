@@ -4,7 +4,7 @@
 #
 
 app = "dbsky"
-primary_region = "den"
+primary_region = "lax"
 kill_signal = "SIGINT"
 kill_timeout = 5
 

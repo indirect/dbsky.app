@@ -12,10 +12,14 @@ kill_timeout = 5
   PORT = "3000"
   NODE_ENV="production"
 
+[[restart]]
+  policy = "on-failure"
+  retries = 1
+
 [http_service]
   internal_port = 3000
   force_https = true
-  auto_stop_machines = true
+  auto_stop_machines = false
   auto_start_machines = true
   min_machines_running = 1
   [http_service.concurrency]
